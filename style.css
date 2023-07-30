@@ -1,0 +1,163 @@
+html, body {
+  background-color: #ffffff;
+  font-family: "Kanit", sans-serif;
+  }
+
+h1, h2, h3, h4 {
+  font-family: "Kanit", sans-serif;
+  }
+
+h1 {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0;
+  }
+
+section {
+  width: 55% ;
+  background-image: linear-gradient(#0e76a8, #0f638a);
+  margin: 15px auto 0;
+  padding: 0px 15px 0px;
+  border: 1px solid #5e748d;
+  border-radius: 6px;
+  box-shadow: 3px -2px 1px 3px #4c5e72;
+  }
+
+section a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #93b1d4;
+  }
+
+.image, .about, .skills .skill-list {
+  display: inline-block;
+  }
+    
+
+.image {
+  width: 30%;  text-align: left;
+}
+
+.image img {
+  height: 180px;
+  width: 123px;
+  border: 4px solid #ffffff; /* Borde azul claro */
+  border-radius: 5%; /* Borde curvo */}
+
+.about {
+  width: 60%;  
+  padding: 10px 15px;
+  align-content: center;
+}
+
+.video-responsive {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* con base en el aspect ratio del formato de video de YouTube */
+  padding-top: 30px;
+  position: relative;
+  width: 800px;
+  margin: 0 auto 15px;
+}
+
+.video-responsive iframe {
+  height: 100%;
+  position: absolute;
+  left: 5px;
+  top: 0;
+  width: 80%;
+  border-radius: 5%;
+}
+
+.skills div.skill-list {
+  vertical-align: top;
+  margin: 0 30px;
+}
+
+.social ul{
+  list-style: none;
+  font-weight: bold;
+  padding: 0;
+  }
+
+.social ul li {
+  display: inline;
+  font-size: 17px;
+  margin-right: 15px;
+  }
+
+.skill-list:first-of-type {
+  margin-left: 0 !important;
+  }
+
+
+.social ul li:first-child a:hover {
+  color: #0a66c2
+  }
+
+.social ul li:nth-child(2) a:hover {
+  color:  #c4302b
+  }
+
+@media (min-width: 576px) and (max-width: 1286px) {
+  section {
+    width: 90vw;
+    }
+
+  .image {
+    padding: 10px 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .video-responsive {
+    width: auto;
+    margin: 0 15px 15px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* CSS para max-width: 575.98.px */
+  body {
+    font-size: 1.2em;
+  }
+
+  section {
+    width: 85vw;
+
+  }
+
+  .image {
+    width: auto;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+    width: auto;
+    margin: 0 15px 15px;
+  }
+  .video-responsive iframe {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .skill-list:first-of-type {
+    margin-left: 30px !important;
+  }
+
+  .social ul li {
+    font-size: 1.3em;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+}
